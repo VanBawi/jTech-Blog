@@ -1,0 +1,32 @@
+{
+	"name": "jack-blogging-tech",
+	"version": "1.0.0",
+	"description": "Blogging",
+	"main": "server.js",
+	"scripts": {
+		"client-install": "npm install -- prefix client",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"build": "npm install && npm install --prefix client && npm run build --prefix client",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm install --prefix client && npm run build --prefix client"
+	},
+	"author": "Jack",
+	"license": "MIT",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"concurrently": "^5.3.0",
+		"config": "^3.3.2",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.12.3",
+		"react-redux": "^7.2.1",
+		"react-syntax-highlighter": "^15.4.3"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	}
+}

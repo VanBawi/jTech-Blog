@@ -1,0 +1,4 @@
+{
+	"mongoURI": "mongodb+srv://my_blog:PkaCnNDt2hjyUReF@jackvan.wsjip.mongodb.net/my_blog?retryWrites=true&w=majority",
+	"mySecret": "mySecret-mySecret-mySecret"
+}
